@@ -20,7 +20,7 @@
 <body>
 @include('navbar')
 <div class="container-fluid py-2 p-5">
-    @yield('indexprogram')
+    @yield('add')
 </div>
 </body>
 </html>
