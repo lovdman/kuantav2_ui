@@ -19,6 +19,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(\App\Http\Controllers\HomeController::class)->group(function (){
     Route::get('/', 'home');
+    Route::get('/{kpis}/program', 'indexProgram')->name('program');
+    Route::get('/{program}/kegiatan', 'indexKegiatan')->name('kegiatan');
+
+    Route::get('/{program}/kegiatan/addkegiatan', 'addKegiatan')->name('addkegiatan');
+
     Route::post("users", "getUser")->name('getUser');
 });
 
@@ -28,13 +33,11 @@ Route::controller(\App\Http\Controllers\ProgramController::class)->group(functio
 
 });
 
-Route::get('/kpiscapaian/{circle}', [\App\Http\Controllers\NavbarController::class, 'indexCapaian'])->name('capaian');
-Route::get('/kpistarget/{circle}', [\App\Http\Controllers\NavbarController::class, 'indexTarget'])->name('target');
+Route::controller(\App\Http\Controllers\NavbarController::class)->group(function (){
+    Route::get('/kpiscapaian/{circle}', 'indexCapaian')->name('capaian');
+    Route::get('/kpistarget/{circle}', 'indexTarget')->name('target');
 
-Route::get('/{kpis}/program', [\App\Http\Controllers\HomeController::class, 'indexProgram'])->name('program');
-//Route::get('/{kpis}/program/addprogram', [\App\Http\Controllers\HomeController::class, 'addProgram'])->name('addprogram');
+});
 
 
-Route::get('/{program}/kegiatan', [\App\Http\Controllers\HomeController::class, 'indexKegiatan'])->name('kegiatan');
-Route::get('/{program}/kegiatan/addkegiatan', [\App\Http\Controllers\HomeController::class, 'addKegiatan'])->name('addkegiatan');
 
