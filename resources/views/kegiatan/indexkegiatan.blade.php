@@ -19,6 +19,7 @@
             <th>Deadline</th>
             <th>Status</th>
             <th>Presentase Ketercapaian</th>
+            <th>Action</th>
         </tr>
         </thead>
         <tbody>
@@ -32,7 +33,11 @@
             <td class="align-middle">Dimyadi</td>
             <td class="align-middle">20 Agustus</td>
             <td class="align-middle">on progress</td>
-            <td class="align-middle">81%</td>
+            <td class="align-middle" style="text-align: center;">81%</td>
+            <td class="align-middle">
+                <a href="#" class="btn btn-warning">edit</a>
+                <a href="#" class="btn btn-danger">delete</a>
+            </td>
         </tr>
         </tbody>
     </table>
