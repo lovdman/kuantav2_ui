@@ -8,7 +8,8 @@ class NavbarController extends Controller
 {
     public function indexCapaian($circle){
 
-        return view('kpis.kpiCapaian');
+
+        return view('kpis.kpiCapaian', compact('circle'));
     }
 
     public function indexTarget($circle){

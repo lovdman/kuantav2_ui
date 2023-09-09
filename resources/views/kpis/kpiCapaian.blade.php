@@ -7,18 +7,18 @@
 <div class="container-fluid py-2 p-5">
 
     <div class="d-flex align-items-center justify-content-between mb-3 mt-3">
-        <h2>List KPI's Circle Antum</h2>
+        <h2>List KPI's Circle {{$circle}}</h2>
 {{--        if auth == executive or admin --}}
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 Other Circle
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Creative Technology</a></li>
-                <li><a class="dropdown-item" href="#">Kuanta Institute</a></li>
-                <li><a class="dropdown-item" href="#">Operation</a></li>
-                <li><a class="dropdown-item" href="#">Partnership</a></li>
-                <li><a class="dropdown-item" href="#">School Design</a></li>
+                <li><a class="dropdown-item" href="{{route('capaian', "CT")}}">Creative Technology</a></li>
+                <li><a class="dropdown-item" href="{{route('capaian', "KI")}}">Kuanta Institute</a></li>
+                <li><a class="dropdown-item" href="{{route('capaian', "OP")}}">Operation</a></li>
+                <li><a class="dropdown-item" href="{{route('capaian', "PS")}}">Partnership</a></li>
+                <li><a class="dropdown-item" href="{{route('capaian', "SD")}}">School Design</a></li>
             </ul>
         </div>
     </div>
