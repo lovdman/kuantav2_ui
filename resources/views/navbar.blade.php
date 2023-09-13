@@ -4,6 +4,27 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
+<style>
+
+    /*.navbar {*/
+    /*    background-color: #00a9ff !important;*/
+    /*    border: 2px solid #00a9ff!important;*/
+    /*}*/
+
+    .navbar-nav .nav-link {
+        color: rgba(0, 0, 0, 0.75);
+        font-size: 15px;
+        position: relative;
+        transition: all 0.4s;
+        text-decoration: none;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+</style>
+
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid bg-warning">
